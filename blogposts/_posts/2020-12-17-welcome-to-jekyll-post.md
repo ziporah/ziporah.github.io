@@ -27,9 +27,10 @@ ruby --version
 ruby 2.7.2p137 (2020-10-01 revision 5445e04352) [arm64-darwin20]
 ```
 
-There was a problem with the ffi installation on arm64, in the past days they seem to have released 1.14.2 and this version installs without problems.
-I however installed 1.13.1 from source as follows:
+There was a problem with the ffi installation on arm64, in the past days they seem to have released 1.14.2 and this version of the gem installs without problems. I however installed 1.13.1 from source as follows:
+I force-build the libffi from source and then compiled the ffi gem.
 ```
+$ brew install --force --build-from-source libffi
 $ cd ~/development/github
 $ git clone https://github.com/ffi/ffi
 $ cd ffi
