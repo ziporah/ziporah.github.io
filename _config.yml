@@ -108,6 +108,7 @@ highlighter: rouge
 permalink: /:year-:month-:day-:title/
 paginate: 7
 
+remote-theme: daattali/beautiful-jekyll
 kramdown:
   input: GFM
 
@@ -140,10 +141,7 @@ defaults:
       layout: "page"
 
 # Build settings
-# theme: minima
-theme: beautiful-jekyll-theme
-# theme: jekyll-theme-tactile
-# theme: jekyll-theme-minimal
+# theme: beautiful-jekyll-theme
 plugins:
   - jekyll-feed
   - jekyll-paginate
