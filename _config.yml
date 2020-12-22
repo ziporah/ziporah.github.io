@@ -63,7 +63,7 @@ rss-description: This website is a virtual proof that I'm awesome
 share-links-active:
   twitter: true
   facebook: true
-  linkedin: true
+  linkedin: false
   vk: false
 
 # Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
@@ -120,11 +120,18 @@ defaults:
   -
     scope:
       path: "projects"
-      type: "posts"
     values:
       layout: "post"
       comments: false  # add comments to all blog posts
       social-share: true # add social media sharing buttons to all blog posts-
+  -
+    scope:
+      path: "blogposts"
+    values:
+      layout: "post"
+      comments: false  # add comments to all blog posts
+      social-share: true # add social media sharing buttons to all blog posts-
+  -
     scope:
       path: "" # any file that's not a post will be a "page" layout by default
     values:
