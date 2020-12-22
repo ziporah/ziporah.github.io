@@ -1,0 +1,19 @@
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
+.vagrant
+
+# general
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+Gemfile.lock
+
+beautiful-jekyll-theme-*.gem
+
+# local jekyll
+.ruby-version
+.bundle
