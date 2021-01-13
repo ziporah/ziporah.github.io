@@ -8,7 +8,7 @@ tag: podman
 # The journey
 I've been running windows 10 and WSL2 on my work laptop since WSL2 was available and I was allowed to install it by company policy. Previously I had a setup with WSL1, virtualbox and boot2docker for running and building docker images on my local machine. This served me well for quite some time, but I wasn't to pleased with the WSL1 integration and performance, so I decided to go for WSL2. 
 
-One of my main goals with this setup is that I shouldn't loose any benefits, I already managed to setup with WSL1. So I needed to find a way to run containers on this setup. After some thinkering, I managed to get podman and buildah running inside WSL2 (This is enough for another blogpost, perhaps later). With this setup I am capable of building and running containers on my local machine. This all works well, so it's time for the next step. Testing these images and make sure they fullfill all the requirements that were set out.
+One of my main goals with this setup is that I shouldn't loose any benefits, I already managed to achive with my WSL1. So I needed to find a way to run containers on this setup. After some thinkering, I managed to get podman and buildah running inside WSL2 (This is enough for another blogpost, perhaps later). With this setup I am capable of building and running containers on my local machine. This all works well, so it's time for the next step. Testing these images and make sure they fullfill all the requirements that were set out.
 
 We already setup some preliminary testing with inspec, but this setup was designed while we were running docker and not podman. The first test, just giving it a go, resulted in catastrophic failure, as stated below.
 
@@ -28,7 +28,9 @@ Traceback (most recent call last):
 ...
 ```
 
-Most likely you'll end up google'ing stuff like '''podman inspec''' or '''podman rspec''' and finally at some point, you'll probably find [this github issue](https://github.com/inspec/train/issues/525) and continue your search in the train repository, where you'll search will soon become a dead end. Luckely there is a solution, but you just have to figure out how to use it.
+Most likely you'll end up google'ing stuff like '''podman inspec''' or '''podman rspec''' and finally at some point, you'll probably find [this github issue](https://github.com/inspec/train/issues/525) and continue your search in the train repository, where you'll search will soon become a dead end. 
+
+Lucky for you there is a solution, but you just have to figure out how to use it.
 
 # Podman vs Inspec
 
