@@ -39,7 +39,7 @@ navbar-links:
 avatar: "/assets/img/avatar-icon.png"
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
-round-avatar: false
+round-avatar: true
 
 email: you-know-where-to-find-me@somewhere.com
 description: >- # this means to ignore newlines until "baseurl:"
